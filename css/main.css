@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  background-color: rgba(89, 178, 238, 0.2);
+  min-height: 100vh;
+  padding: 20px 10px;
+}
+i {
+  font-size: 20px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+}
