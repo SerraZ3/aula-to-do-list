@@ -66,3 +66,23 @@ i {
   background-color: white;
   color: #4a627c;
 }
+.to-do {
+  background-color: rgba(172, 211, 236, 0.295);
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 5px;
+}
+.status-container {
+  display: inline;
+}
+.status {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: solid 1px black;
+  border-radius: 5px;
+  text-align: center;
+}
+.status:hover {
+  border-color: #007bff;
+  color: #007bff;
+}
