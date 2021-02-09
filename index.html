@@ -25,7 +25,12 @@
       <nav class="navbar fixed-top navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Meu to do list</a>
-          <button type="button" class="btn btn-outline-primary">
+          <button
+            type="button"
+            class="btn btn-outline-primary"
+            data-toggle="modal"
+            data-target="#add-todo-list"
+          >
             <span class="mr-2">Adicionar lista</span>
             <i class="far fa-plus-square"></i>
           </button>
@@ -34,6 +39,63 @@
     </header>
     <main>
       <div class="row mx-2 to-do-container"></div>
+      <!-- Modal add to do list -->
+      <div
+        class="modal fade"
+        id="add-todo-list"
+        tabindex="-1"
+        aria-labelledby="add-todo-list-label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="add-todo-list-label">
+                Adicionar lista de to do
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="title-list-name" class="col-form-label"
+                    >Titulo</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="title-list-name"
+                  />
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                id="add-to-do-list"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <script
